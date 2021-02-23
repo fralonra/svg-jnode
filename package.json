@@ -1,0 +1,43 @@
+{
+  "name": "svg-jnode",
+  "version": "0.0.3",
+  "description": "Render svg node",
+  "main": "lib/index.js",
+  "module": "index.esm.mjs",
+  "types": "lib/index.d.ts",
+  "exports": {
+    "import": "./index.esm.mjs",
+    "require": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "index.esm.mjs"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "lint": "tsc --noEmit --noUnusedLocals true --noUnusedParameters true",
+    "prepublish": "npm run build",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fralonra/svg-jnode.git"
+  },
+  "keywords": [
+    "svg"
+  ],
+  "author": "zoron (https://github.com/fralonra/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fralonra/svg-jnode/issues"
+  },
+  "homepage": "https://github.com/fralonra/svg-jnode#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=10.0"
+  }
+}
